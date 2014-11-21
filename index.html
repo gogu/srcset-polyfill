@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+  img { width: 420px; height: 420px; }
+  </style>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="srcset-polyfill.js"></script>
+  <title>srcset-polyfill testpage</title>
+</head>
+<body>
+  <img srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png 3x" alt="demo image">
+  <img src="." alt="" srcset="images/demo.png">
+  <img src="." alt="" srcset="images/demo.png 1x">
+</body>
+</html>

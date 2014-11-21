@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .demo { text-align: center; }
+    .demo img { width: 142px; height: 142px; }
+  </style>
+  <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="ng-srcset.js"></script>
+  <title>ngSrcset polyfill demo</title>
+</head>
+<body data-ng-app="demoapp">
+  <div class="demo">
+    <img data-gg-srcset="../images/demo.png 1x,
+                         ../images/demo@2x.png 2x,
+                         ../images/demo@3x.png 3x"
+      alt="demo image" src=".">
+    <img data-gg-srcset="../images/demo@2x.png 2x" alt="demo">
+  </div>
+</body>
+</html>
