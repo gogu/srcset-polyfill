@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <style>
-  img { width: 420px; height: 420px; }
+  img { display: block; width: 220px; height: 220px; }
   </style>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="srcset-polyfill.js"></script>
@@ -11,7 +11,43 @@
 </head>
 <body>
   <img srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png 3x" alt="demo image">
+  <p>images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png 3x</p>
   <img src="." alt="" srcset="images/demo.png">
+  <p>images/demo.png</p>
   <img src="." alt="" srcset="images/demo.png 1x">
+  <p>images/demo.png 1x</p>
+  <ul>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+    <li><img width="420" height="420" srcset="images/demo.png 1x, images/demo@2x.png 2x, images/demo@3x.png" alt="demo"></li>
+  </ul>
+
+  <script type="text/javascript">
+  $(window).ready(function() {
+    $('img[srcset]').srcset({lazyload: false;});
+  });
+  </script>
 </body>
 </html>
