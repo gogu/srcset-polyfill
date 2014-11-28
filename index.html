@@ -5,7 +5,7 @@
   <style>
   img { display: block; width: 220px; height: 220px; }
   </style>
-  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="srcset-polyfill.js"></script>
   <title>srcset-polyfill testpage</title>
 </head>
@@ -46,7 +46,7 @@
 
   <script type="text/javascript">
   $(window).ready(function() {
-    $('img[srcset]').srcset({lazyload: false;});
+    $('img[srcset]').srcset({ lazyload: false });
   });
   </script>
 </body>
