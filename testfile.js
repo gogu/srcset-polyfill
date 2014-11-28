@@ -5,6 +5,7 @@ var driver = new webdriver.Builder()
   .build();
 
 driver.get('http://172.16.30.215:8000');
+//driver.get('http://gogu.github.io/srcset-polyfill/');
 
 driver.getTitle().then(function(title) {
   console.log('test page:' + title);

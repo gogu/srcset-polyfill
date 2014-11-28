@@ -80,7 +80,6 @@
         , srcList = _parse(srcset)
         , imgsrc = _matchImg(srcList, ratio);
 
-      
       if (!opt.lazyload) {
         $el.attr('src', imgsrc);
         return;
